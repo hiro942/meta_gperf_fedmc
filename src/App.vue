@@ -7,14 +7,14 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
+    <a href="http://localhost:11191/meta/gperf" target="_blank">
+      <img src="./assets/vue.svg" class="logo" alt="GPerf Logo" />
     </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+    <a href="http://localhost:11191/meta/fedmc" target="_blank">
+      <img src="./assets/fedmc.png" class="logo vue" alt="FedMC Logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <HelloWorld msg="GPerf + FedMC" />
 </template>
 
 <style scoped>
