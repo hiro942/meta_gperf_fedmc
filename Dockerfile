@@ -1,7 +1,9 @@
 FROM node:alpine as builder
 WORKDIR /web
 COPY . .
-RUN yarn config set registry https://registry.npm.taobao.org && yarn && yarn build
+RUN npm install -g pnpm
+RUN pnpm install
+RUN pnpm run build
 
 FROM nginx:alpine
 RUN rm /etc/nginx/conf.d/default.conf
